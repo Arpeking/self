@@ -49,6 +49,17 @@ export type { SDKEvent, SDKEventMap } from './types/events';
 export type { SdkErrorCategory } from './errors';
 // Screen Components (React Native-based)
 export type { provingMachineCircuitType } from './proving/provingMachine';
+
+export {
+  type BottomSectionProps,
+  ExpandableBottomLayout,
+  type FullSectionProps,
+  type LayoutProps,
+  type TopSectionProps,
+} from './layouts/ExpandableBottomLayout';
+
+export { DelayedLottieView } from './components/DelayedLottieView';
+
 export {
   InitError,
   LivenessError,
@@ -59,10 +70,8 @@ export {
   notImplemented,
   sdkError,
 } from './errors';
-export { NFCScannerScreen } from './components/screens/NFCScannerScreen';
 
-// Context and Client
-export { PassportCameraScreen } from './components/screens/PassportCameraScreen';
+export { NFCScannerScreen } from './components/screens/NFCScannerScreen';
 
 export { type ProvingStateType } from './proving/provingMachine';
 // Components

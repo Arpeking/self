@@ -74,7 +74,10 @@ export const screenDescriptors: ScreenDescriptor[] = [
     sectionTitle: '📸 Scanning',
     status: 'placeholder',
     load: () => require('./DocumentCamera').default,
-    getProps: ({ navigate }) => ({ onBack: () => navigate('home') }),
+    getProps: ({ navigate }) => ({
+      onBack: () => navigate('home'),
+      onSuccess: () => navigate('nfc'),
+    }),
   },
   {
     id: 'nfc',
